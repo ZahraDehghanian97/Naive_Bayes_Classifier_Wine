@@ -16,19 +16,27 @@ def one_vs_all(actual, predicted, num_class):
     for i in range(num_class):
         temp_r = []
         temp_p = []
-        positive = i
+        class_of_interest = i
         for j in range (len(actual)):
-            if actual[j] == positive :
+            if actual[j] == class_of_interest :
                 temp_r.append(1)
             else :
                 temp_r.append(0)
-            if predicted[j]== positive:
+            if predicted[j]== class_of_interest:
                 temp_p.append(1)
             else :
                 temp_p.append(0)
         y_real.append(temp_r)
         y_predict.append(temp_p)
     return y_real,y_predict
+
+# Calculate accuracy percentage
+def accuracy_metric(actual, predicted):
+    correct = 0
+    for i in range(len(actual)):
+        if actual[i] == predicted[i]:
+            correct += 1
+    return correct / float(len(actual)) * 100.0
 
 
 def evaluate_algorithm(dataset, algorithm,num_class, *args):
@@ -41,6 +49,7 @@ def evaluate_algorithm(dataset, algorithm,num_class, *args):
         row_copy[-1] = None
     predicted = algorithm(train_set, test_set, *args)
     actual = [row[-1] for row in fold]
+    # print('accuracy : '+ str(accuracy_metric(actual,predicted)))
     y_real , y_predict = one_vs_all(actual,predicted,num_class)
     fpr = dict()
     tpr = dict()
@@ -58,7 +67,7 @@ def evaluate_algorithm(dataset, algorithm,num_class, *args):
         plt.ylim([0.0, 1.05])
         plt.xlabel('False Positive Rate')
         plt.ylabel('True Positive Rate')
-        plt.title('Receiver operating characteristic example')
+        plt.title('ROC Curve, Class of interest : '+str(i))
         plt.legend(loc="lower right")
     plt.show()
 

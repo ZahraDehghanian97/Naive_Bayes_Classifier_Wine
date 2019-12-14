@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="915f8bf1-1728-4332-b7a8-0dc01699def1" name="Default Changelist" comment="" />
+    <list default="true" id="915f8bf1-1728-4332-b7a8-0dc01699def1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cross_Validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cross_Validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROC.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROC.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +17,7 @@
     <session id="902210297">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -29,13 +35,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="py" value="1303" />
+          <entry key="py" value="1451" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="1303" />
+          <entry key="Python" value="1451" />
         </counts>
       </usages-collector>
     </session>
@@ -45,12 +51,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cross_Validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="151" selection-end-line="151" />
+            <state relative-caret-position="254">
+              <caret line="26" lean-forward="true" selection-start-line="19" selection-end-line="26" />
               <folding>
                 <element signature="e#34#47#0" expanded="true" />
-                <marker date="1576305999458" expanded="true" signature="719:821" ph="..." />
-                <marker date="1576305999458" expanded="true" signature="4104:4324" ph="..." />
+                <marker date="1576309647587" expanded="true" signature="719:821" ph="..." />
+                <marker date="1576309647587" expanded="true" signature="4100:4320" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,11 +65,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ROC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="-906">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding>
                 <element signature="e#34#47#0" expanded="true" />
-                <marker date="1576307287537" expanded="true" signature="355:828" ph="..." />
+                <marker date="1576310892091" expanded="true" signature="355:1088" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,12 +87,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>prin</find>
+      <find>acc</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/a.py" />
+        <option value="$PROJECT_DIR$/Cross_Validation.py" />
         <option value="$PROJECT_DIR$/ROC.py" />
       </list>
     </option>
@@ -97,6 +108,7 @@
     <option name="width" value="1875" />
     <option name="height" value="930" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -129,6 +141,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.ROC">
+    <configuration name="Cross_Validation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Q7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cross_Validation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ROC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Q7" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,10 +207,12 @@
     <list>
       <item itemvalue="Python.a" />
       <item itemvalue="Python.ROC" />
+      <item itemvalue="Python.Cross_Validation" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.ROC" />
+        <item itemvalue="Python.Cross_Validation" />
         <item itemvalue="Python.a" />
       </list>
     </recent_temporary>
@@ -197,9 +232,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
@@ -207,7 +243,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -223,23 +259,23 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Cross_Validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="151" selection-end-line="151" />
+        <state relative-caret-position="254">
+          <caret line="26" lean-forward="true" selection-start-line="19" selection-end-line="26" />
           <folding>
             <element signature="e#34#47#0" expanded="true" />
-            <marker date="1576305999458" expanded="true" signature="719:821" ph="..." />
-            <marker date="1576305999458" expanded="true" signature="4104:4324" ph="..." />
+            <marker date="1576309647587" expanded="true" signature="719:821" ph="..." />
+            <marker date="1576309647587" expanded="true" signature="4100:4320" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ROC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="-906">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding>
             <element signature="e#34#47#0" expanded="true" />
-            <marker date="1576307287537" expanded="true" signature="355:828" ph="..." />
+            <marker date="1576310892091" expanded="true" signature="355:1088" ph="..." />
           </folding>
         </state>
       </provider>

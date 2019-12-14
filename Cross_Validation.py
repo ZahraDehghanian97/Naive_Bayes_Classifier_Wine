@@ -93,7 +93,7 @@ def summarize_by_class(dataset):
 
 
 # Calculate the Gaussian probability distribution function for x
-def calculate_probability(x, mean, stdev):
+def Gaussian_probability(x, mean, stdev):
     exponent = exp(-((x - mean) ** 2 / (2 * stdev ** 2)))
     return (1 / (sqrt(2 * pi) * stdev)) * exponent
 
@@ -106,7 +106,7 @@ def calculate_class_probabilities(summaries, row):
         probabilities[class_value] = summaries[class_value][0][2] / float(total_rows)
         for i in range(len(class_summaries)):
             mean, stdev, _ = class_summaries[i]
-            probabilities[class_value] *= calculate_probability(row[i], mean, stdev)
+            probabilities[class_value] *= Gaussian_probability(row[i], mean, stdev)
     return probabilities
 
 
@@ -128,7 +128,7 @@ def naive_bayes(train, test):
     for row in test:
         output = predict(summarize, row)
         predictions.append(output)
-    return (predictions)
+    return predictions
 
 
 def load_data():
